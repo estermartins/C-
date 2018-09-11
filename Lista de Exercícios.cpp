@@ -119,7 +119,6 @@ desse vetor.
 using namespace std;
 
 int main()
-
 {
     int vetor[5] = {2,14,15,23,36};
     cout << "O primeiro elemento do vetor e " << vetor[0] << endl;
