@@ -125,3 +125,7 @@ int main()
     cout << "O ultimo elemento do vetor e  " << vetor[4] << endl;
 }
 
+/******************************************************************************
+Exercício 7 - Crie um vetor de elementos do tipo float, insira valores nesses elementos e faça um
+loop para imprimir cada um desses elementos.
+*******************************************************************************/
