@@ -102,3 +102,27 @@ Você pode utilizar o programa para encontrar o maior item de um
 vetor e a posição desse item, para fazer essa verificação, conforme visto em sala. 
 Como montar a estrutura: Crie um vetor de números inteiros, contendo a quantidade de pães vendidas no dia. 
 Imagine que na posição 0 seria o dia 1, na posição 1 seria o dia 2 e assim por diante.  
+     
+     
+#include <iostream> // inclui biblioteca-pacote //
+
+using namespace std; // conjunto de funcoes utilizadas //
+
+int main() // funcao principal que inicia o codigo //
+{ 
+     int numero; // declaracao de uma variavel do tipo inteira e sera usada para leitura da sequencia // 
+     int quadrado; // declaracao de uma variavel do tipo inteira e que guarda o quadrado do numero lido // 
+ 
+     cout << endl << "\tCalculo do quadrado de um número\n"; // (cout = imprime na tela o comando), (\t = centraliza a escrita), (\n = quebra de linha), (<< = saida) //
+     cout << "\nDigite o número que você deseja saber o quadrado ou zero para sair:\n"; 
+     cin >> numero; // (cin >> = entrada, guarda a variavel) // 
+ 
+     while (numero != 0) { // comando de loop = se o numero for diferente de 0... // 
+          quadrado = numero * numero; // a variavel quadrado que e igual a variavel numero elevado a quadrado //
+          cout << "O quadrado do numero " << numero << " é "<< quadrado <<" \n"; // imprime o comando //
+          cin >> numero; // guarda a variavel numero //
+     } 
+ 
+    return 0; // comando que interrompe o loop //
+} 
+// 
