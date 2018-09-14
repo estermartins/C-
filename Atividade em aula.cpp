@@ -29,26 +29,26 @@ int main()
 2 - Documente com comentários o código abaixo, que dado um número inteiro positivo n, 
 calcular a soma dos n primeiros números inteiros positivos. Explique como a lógica do algoritmo faz esse cálculo. 
 
-#include <iostream> 
-using namespace std; 
+#include <iostream> // inclui biblioteca //
+using namespace std; // conjunto de funcoes utilizadas //
 
 int main() { 
     int n; // guarda o numero dado 
     int i; // contador, para controle do loop  
     int soma; // guarda as somas parcias 
 
-    cout << "\n\tCalculo da soma dos n primeiros inteiros positivos\n"; 
+    cout << "\n\tCalculo da soma dos n primeiros inteiros positivos\n"; // imprime o calculo da soma dos numeros //
  
     //Inicializacoes 
-    cout << "\nDigite o valor de n: "; 
-    cin >> n; 
-    soma = 0; 
-    i = 1; 
+    cout << "\nDigite o valor de n: "; // imprime o valor de n //
+    cin >> n; // guarda a variavel // 
+    soma = 0; // a soma inicializa com valor 0 //
+    i = 1; // primeiro numero inteiro da variavel //
  
     // Calculo da soma 
-    while (i <= n) { 
-        soma = soma + i; 
-        i = i + 1; 
+    while (i <= n) { // comando inicia o loop // 
+        soma = soma + i; // loop vai rodar com o comando de que e acumulado o valor de +1 (1ª interacao = 0+1, 2ª = 1+1, e assim por diante) //
+        i = i + 1; // 
     } 
  
     //Escreve a resposta 
@@ -103,7 +103,8 @@ vetor e a posição desse item, para fazer essa verificação, conforme visto em
 Como montar a estrutura: Crie um vetor de números inteiros, contendo a quantidade de pães vendidas no dia. 
 Imagine que na posição 0 seria o dia 1, na posição 1 seria o dia 2 e assim por diante.  
      
-     
+RESPOSTAS
+1.
 #include <iostream> // inclui biblioteca-pacote //
 
 using namespace std; // conjunto de funcoes utilizadas //
@@ -124,5 +125,5 @@ int main() // funcao principal que inicia o codigo //
      } 
  
     return 0; // comando que interrompe o loop //
-} 
-// 
+}
+
