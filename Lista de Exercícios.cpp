@@ -178,6 +178,37 @@ Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Consideran
 que ele trabalhou 22 dias nesse mês. 
 *******************************************************************************/
 
+#include <iostream>
+
+using namespace std;
+
+int salario(int valor_hora, int horas_dia, int dias_mes)
+{
+    return valor_hora * horas_dia * dias_mes;
+}
+int main()
+{
+    string nome = "";
+    int valor = 0;
+    int horas = 0;
+    int dias = 0;
+    cout << "Digite o nome de um desenvolvedor ou -1 para sair:\n";
+    cin  >> nome;
+    while (nome != "-1") {
+        cout << "Quanto " << nome << " ganha por hora?\n";
+        cin  >> valor;
+        cout << "Quantas horas " << nome << " trabalha por dia?\n";
+        cin  >> horas;
+        cout << "Quantos dias " << nome << " trabalha por mes?\n";
+        cin  >> dias;
+        cout << "Salario de " << nome << ": ";
+        cout << salario(valor, horas, dias) << endl;
+        cout << "Digite o nome de um desenvolvedor ou -1 para sair:\n";
+        cin  >> nome;
+    }
+    return 0;
+}
+
 /******************************************************************************
 Exercício 14 - Uma empresa de aviação possui um tipo de avião que comporta 10 pessoas. Crie um programa 
 que possui uma função, cujos parâmetros de entrada são: o número de aviões disponíveis e o número de 
@@ -185,6 +216,7 @@ passageiros para serem transportados. Essa função deverá calcular se os aviõ
 pessoas, e caso não consiga, quantas ficarão para as próximas viagens. Faça uma simulação na qual os 
 aviões comportam o número de pessoas e outra na qual ele não comporta. 
 *******************************************************************************/
+
 #include <iostream>
 using namespace std;
 string calcula_avioes(int num_pessoas, int num_avioes){
