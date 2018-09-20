@@ -237,7 +237,18 @@ int main(){
 Exercício 15 - Um hospital consegue atender 20 pessoas por hora. Considerando que no momento em que 
 o hospital foi aberto chegaram 100 pessoas, faça um programa para calcular quanto tempo o paciente com 
 a senha 68 irá demorar para ser atendido.  
-*******************************************************************************/]
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int num_atendimentos = 20;
+    int pos_fila = 68;
+    int num_horas_espera;
+    num_horas_espera = pos_fila/num_atendimentos;
+    cout << num_horas_espera;
+}
 
 /******************************************************************************
 Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o 
