@@ -139,6 +139,20 @@ desses jogos e imprima a pontuação obtida por cada time.
 Exercício 9 - Cria um programa em C++ que possui uma variável inteira que se inicia com o valor 0. 
 Faça com que ela acumule o valor 2 nela mesma ao longo de 20 iterações. 
 *******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int var = 0;
+int controle = 0;
+int num_interacaoes = 20;
+for(controle=0; controle<num_interacaoes;controle++){
+    var = var + 2;
+}
+cout << var;
+}
 
 /******************************************************************************
 Exercício 10 - Pensando na mesma lógica do programa anterior, crie uma alteração no Exercício referente 
