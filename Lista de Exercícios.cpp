@@ -185,6 +185,21 @@ passageiros para serem transportados. Essa função deverá calcular se os aviõ
 pessoas, e caso não consiga, quantas ficarão para as próximas viagens. Faça uma simulação na qual os 
 aviões comportam o número de pessoas e outra na qual ele não comporta. 
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+string calcula_avioes(int num_pessoas, int num_avioes){
+    int num_lugares = 10* num_avioes; 
+    if (num_lugares>=num_pessoas){
+        return "Todos couberam";
+    }
+    else { cout << "Faltaram" << num_pessoas - num_lugares;}
+    return "Não coube";
+}
+int main(){
+    int num_pessoas = 100;
+    int num_avioes = 10;
+    cout << calcula_avioes(num_pessoas, num_avioes);
+}
 
 /******************************************************************************
 Exercício 15 - Um hospital consegue atender 20 pessoas por hora. Considerando que no momento em que 
