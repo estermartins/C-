@@ -175,6 +175,7 @@ ser considerados são: Nota acima de 70 indica aprovação, nota abaixo de 40 in
 nota entre 40 e 59 indica exame especial.  
 *******************************************************************************/
 
+
 /******************************************************************************
 Exercício 12 - Faça uma alteração no seu programa anterior, para que ele utilize as notas individuais 
 do aluno em cada atividade da disciplina, e calcule o resultado final, para que posteriormente possa 
@@ -260,21 +261,80 @@ int main(){
 Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o 
 maior.   
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int vetor[] = {45,21,78,4,95,66};
+    int max = vetor[0];
+    int contador = 1;
+    int tam_vetor = 6;
+    int posicao = 0;
+    while (contador < tam_vetor){
+        if (vetor [contador] > max){
+            max = vetor[contador];
+            posicao = contador;
+        }
+        contador ++;
+    }
+    cout << max;
+}
+
 
 /******************************************************************************
 Exercício 17 - Faça um programa em C++ que executa a mesma operação do primeiro, porém informa a 
 posição do maior número, e não o seu valor.   
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int vetor[] = {45,21,78,4,95,66};
+    int max = vetor[0];
+    int contador = 1;
+    int tam_vetor = 6;
+    int posicao = 0;
+    while (contador < tam_vetor){
+        if (vetor [contador] > max){
+            max = vetor[contador];
+            posicao = contador;
+        }
+        contador ++;
+    }
+    cout << posicao;
+}
 
 /******************************************************************************
 Exercício 18 - Faça um ajuste no programa 16, para que ele também informe o menor valor da lista.  
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int vetor[] = {45,21,78,4,95,66};
+    int min = vetor[0];
+    int contador = 1;
+    int tam_vetor = 6;
+    int posicao = 0;
+    while (contador < tam_vetor){
+        if (vetor [contador] < min){
+            min = vetor[contador];
+            posicao = contador;
+        }
+        contador ++;
+    }
+    cout << min;
+}
 
 /******************************************************************************
 Exercício 19 - A equipe de uma contrutora consegue entregar 100 metros quadrados construídos por dia. 
 Com base nisso, faça um programa que possui uma função para efetuar o cálculo do tempo necessário 
 para construir um projeto com 2326 metros quadrados. Esse tempo deve ser fornecido em dias.  
 *******************************************************************************/
+
 
 /******************************************************************************
 Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior 
