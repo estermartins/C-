@@ -12,7 +12,7 @@ Para isso, emplemente uma coleta de informacoes, para os seguintes dados:
  
 Uma vez que as informacoes foram fornecidas, verifique se o funcionario é do Brasil.
 Caso seja, imprima um texto com essa informacao para o funcionario do RH.
- Faca o calculo do desconto em folha, devido ao INNS, segundo a tabela abaixo:
+ Faca o calculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  
  ___________________________________________
 | Salario (reais)           |    Desconto    |
