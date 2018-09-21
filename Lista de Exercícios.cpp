@@ -183,6 +183,27 @@ cout << var;
 Exercício 10 - Pensando na mesma lógica do programa anterior, crie uma alteração no Exercício referente 
 aos times, para que seja feita a soma das pontuações de cada um. 
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int soma_pontos(int pontos[], int numjogos){
+    int resultado = 0;
+    int controle = 0;
+    while(controle < numjogos){
+    resultado = resultado + pontos[controle];
+    controle = controle + 1;
+}   
+    return resultado;
+}
+int main()
+{
+    int soma_cruzeiro[6] = {3,3,1,3,0,3};
+    int soma_corinthias[6] = {1,0,1,3,0,3};
+    int soma_gremio[6] = {0,3,1,3,1,1};
+    cout << "A soma de pontos do cruzeiro e " << (soma_pontos(soma_cruzeiro,6)) << endl;
+    cout << "A soma de pontos do corinthias e " << (soma_pontos(soma_corinthias,6)) << endl;
+    cout << "A soma de pontos do gremio e " << (soma_pontos(soma_gremio,6)) << endl;
+}
 
 /******************************************************************************
 Exercício 11 - Crie um programa que faz a leitura da nota final de um aluno e verifica se ele  
