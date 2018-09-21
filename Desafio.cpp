@@ -31,6 +31,43 @@ Caso seja, imprima um texto com essa informacao para o funcionario do RH.
       Level 7 - Salario ate 15001 - 30000 - Deretor de TI 
       Level 8 - Salario ate 30001 - 50000 - Diretor de TI Sênio
       Level 9 - Salario ate 50001- 100000 - Presidente 
-   
- 
 ************************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string nome;
+    int CPF;
+    string nacionalidade;
+    string identidade;
+    string pais;
+    string estado;
+    string cidade;
+    string rua;
+    int numero;
+    int salario;
+    cout << "Como se chama?" << "\n";
+    cin >> nome;
+    cout << "Qual o seu CPF?" << "\n";
+    cin >> CPF;
+    cout << "Qual a sua nacionalidade?" << "\n";
+    cin >> nacionalidade;
+    cout << "Qual a sua identidade?" << "\n";
+    cin >> identidade;
+    cout << "Vive em qual pais?" << "\n";
+    cin >> pais;
+    cout << "Em qual estado?" << "\n";
+    cin >> estado;
+    cout << "Em qual cidade?" << "\n";
+    cin >> cidade;
+    cout << "Em qual rua?" << "\n";
+    cin >> rua;
+    cout << "Qual o numero da sua casa?" << "\n";
+    cin >> numero;
+    cout << "Quanto é o seu salario?" << "\n";
+    cin >> salario;
+    
+}
