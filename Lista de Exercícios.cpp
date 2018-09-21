@@ -340,3 +340,25 @@ para construir um projeto com 2326 metros quadrados. Esse tempo deve ser forneci
 Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior 
 valor gerado. 
 *******************************************************************************/
+RAND 
+#include <iostream>
+using namespace std;
+
+int main(){
+    int tam_vetor = 10; int vetor[10]; int controle = 0;
+    while (controle < tam_vetor){
+        vetor[controle] = rand() %10 + 1;
+        controle ++;
+    }
+    int max = vetor[0];
+    int contador = 1;
+    int posicao = 0;
+    while (contador < tam_vetor){
+        if (vetor[contador] > max){
+            max = vetor[contador];
+            posicao = contador;
+        }
+        contador ++;
+    }
+    cout << max;
+}
