@@ -1,9 +1,7 @@
 /******************************************************************************
  Exercício 1 - Crie um programa em C++, que recebe uma palavra como parâmetro e imprime.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -18,9 +16,7 @@ int main()
  Exercício 2 - Crie um programa em C++ que atribui o valor 20 para uma variável inteira, o valor
 30 para outra variável inteira e some esses dois valores e armazene em outra variável.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 int somar(int a, int b)
 {
@@ -43,9 +39,7 @@ Crie uma segunda variável do tipo Float, contendo o valor do salário dessa pes
 
 A pessoa <Nome da Pessoa>, recebe R$<Salário da pessoa>.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -62,9 +56,7 @@ qual salário é maior.
 
 Dica - Utilize a instrução if para fazer comparações e os operadores > ou < para comparar.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 int main()
 {
@@ -83,9 +75,7 @@ int main()
 Exercício 5 - Crie um programa em C++ que recebe a pontuação de um usuário e a de outro usuário
 e verifica quem ganhou o jogo, com base na maior pontuação.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 int soma_pontos(int pontos[], int numjogos){
@@ -113,9 +103,7 @@ int main()
 Exercício 6 - Crie um vetor de elementos do tipo inteiro e imprima o primeiro e o último elemento
 desse vetor.
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -134,13 +122,34 @@ loop para imprimir cada um desses elementos.
 Exercício 8 - Três times de futebol participaram de 6 partidas. Crie vetores para simular os resultados 
 desses jogos e imprima a pontuação obtida por cada time. 
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int cruzeiro[6] = {3,3,1,3,0,3};
+    int corinthias[6] = {1,0,1,3,0,3};
+    int gremio[6] = {0,3,1,3,1,1};
+    int res_cru, res_cor, res_gre;
+    res_cru = 0; res_cor = 0; res_gre = 0;
+    int num_partidas = 6;
+    int contador = 0;
+    while(contador < num_partidas){
+        res_cru = res_cru + cruzeiro[contador];
+        res_cor = res_cor + corinthias[contador];
+        res_gre = res_gre + gremio[contador];
+        contador ++;
+    }
+    cout << "Resultado do cruzeiro e " << res_cru << endl;
+    cout << "Resultado do corinthias e " << res_cor << endl;
+    cout << "Resultado do gremio e " << res_gre << endl;
+}
 
 /******************************************************************************
 Exercício 9 - Cria um programa em C++ que possui uma variável inteira que se inicia com o valor 0. 
 Faça com que ela acumule o valor 2 nela mesma ao longo de 20 iterações. 
 *******************************************************************************/
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -177,9 +186,7 @@ Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Consideran
 8 horas por dia, crie uma função que calcula quanto esse desenvolvedor recebeu no mês atual, considerando 
 que ele trabalhou 22 dias nesse mês. 
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 int salario(int valor_hora, int horas_dia, int dias_mes)
@@ -216,9 +223,9 @@ passageiros para serem transportados. Essa função deverá calcular se os aviõ
 pessoas, e caso não consiga, quantas ficarão para as próximas viagens. Faça uma simulação na qual os 
 aviões comportam o número de pessoas e outra na qual ele não comporta. 
 *******************************************************************************/
-
 #include <iostream>
 using namespace std;
+
 string calcula_avioes(int num_pessoas, int num_avioes){
     int num_lugares = 10* num_avioes; 
     if (num_lugares>=num_pessoas){
@@ -239,7 +246,6 @@ o hospital foi aberto chegaram 100 pessoas, faça um programa para calcular quan
 a senha 68 irá demorar para ser atendido.  
 *******************************************************************************/
 #include <iostream>
-
 using namespace std;
 
 int main(){
