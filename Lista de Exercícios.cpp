@@ -334,7 +334,20 @@ Exercício 19 - A equipe de uma contrutora consegue entregar 100 metros quadrado
 Com base nisso, faça um programa que possui uma função para efetuar o cálculo do tempo necessário 
 para construir um projeto com 2326 metros quadrados. Esse tempo deve ser fornecido em dias.  
 *******************************************************************************/
+#include <iostream>
+using namespace std;
 
+int tempo_const(int metros_dia, int metros_const_total)
+{
+    return metros_const_total/metros_dia;
+}
+int main()
+{
+    int metros_dia = 100;
+    int metros_const_total = 2326;
+    
+    cout << "O tempo total de construcao e de " << metros_const_total/metros_dia << " dias";
+}
 
 /******************************************************************************
 Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior 
