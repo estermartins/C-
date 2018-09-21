@@ -40,7 +40,7 @@ using namespace std;
 int main()
 {
     string nome;
-    int CPF;
+    string CPF; // uso do string ao inves de int, pois este nao rodou o codigo inteiro digitando mais de 10 numeros referente ao CPF // 
     string nacionalidade;
     string identidade;
     string pais;
