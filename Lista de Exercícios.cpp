@@ -117,6 +117,22 @@ int main()
 Exercício 7 - Crie um vetor de elementos do tipo float, insira valores nesses elementos e faça um
 loop para imprimir cada um desses elementos.
 *******************************************************************************/
+#include <iostream> 
+using namespace std; 
+
+float valores(float a, float b)
+{
+    return a && b; 
+} 
+int main() 
+{ 
+  float a; 
+  float b; 
+  a = 41.3; 
+  b = 74.4; 
+  cout <<"Conteudo de a: "<< a << "\n"; 
+  cout <<"Conteudo de b: "<< b << "\n"; 
+}
 
 /******************************************************************************
 Exercício 8 - Três times de futebol participaram de 6 partidas. Crie vetores para simular os resultados 
