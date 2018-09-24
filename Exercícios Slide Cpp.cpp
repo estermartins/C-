@@ -15,7 +15,43 @@ Faça um loop que cálcula a soma da pontuação de cada time.
 
 
 RESPOSTAS 
-1. A estrutura WHILE 
+1. A estrutura WHILE determina que pode ter uma condição de término definida já no inicio ou não.
+Ela testa a condição e se caso for verdadeiro executa o bloco abaixo, caso seja falso ele vai para a próxima instrução fora do laço.
+#include <iostream> 
+using namespace std; 
+
+int main(){ 
+int i = 0; 
+int max = 100; 
+while(i<max) 
+{ 
+    i++; 
+} 
+cout << i << "\n"; 
+i = 0; 
+while(i < max){ 
+    if(i == 50) 
+    break; 
+    i++; 
+} 
+cout << i << "\n"; 
+return 0; 
+} 
+
+2. A estrutura FOR é utilizada geralmente quando existe um término definido.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int soma = 0;   
+    int controle = 0; 
+    for (controle = 0; controle < 5; controle++) { 
+    soma = soma + controle; 
+    }
+} 
+
+3. 
 
 8. #include <iostream>
 using namespace std;
