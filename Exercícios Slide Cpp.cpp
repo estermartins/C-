@@ -16,3 +16,27 @@ Faça um loop que cálcula a soma da pontuação de cada time.
 
 RESPOSTAS 
 1. A estrutura WHILE 
+
+8. #include <iostream>
+using namespace std;
+
+int main()
+{
+ int tam = 5; 
+    int cru[tam] = {3,1,3,3,3}; 
+    int atl[tam] = {0,1,0,0,0}; 
+    int pontos_cru = 0; 
+    int pontos_atl = 0;
+    for(int i = 0; i < tam; i++) 
+    {
+    pontos_cru = pontos_cru + cru[i]; 
+    pontos_atl = pontos_atl + atl[i];
+    } 
+    if(pontos_cru > pontos_atl) 
+    cout << pontos_cru << "Cruzeiro campeao"; 
+    else if (pontos_cru == pontos_atl) 
+    cout << "Empate"; 
+    if(pontos_atl > pontos_cru)     
+    cout << pontos_atl << "Atletico campeao"; 
+    return 0;     
+}
