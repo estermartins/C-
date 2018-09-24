@@ -211,13 +211,54 @@ foi aprovado, reprovado ou se está de exame especial em uma disciplina. Os crit
 ser considerados são: Nota acima de 70 indica aprovação, nota abaixo de 40 indica reprovação e 
 nota entre 40 e 59 indica exame especial.  
 *******************************************************************************/
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    int nota_aluno = 54;
+    if (nota_aluno > 60)
+    cout << "Aluno foi aprovado";
+    else if (nota_aluno < 40)
+    cout << "Aluno foi reprovado";
+    else (nota_aluno > 40 < 60);
+    cout << "Aluno fara o exame especial";
+}  
 
 /******************************************************************************
 Exercício 12 - Faça uma alteração no seu programa anterior, para que ele utilize as notas individuais 
 do aluno em cada atividade da disciplina, e calcule o resultado final, para que posteriormente possa 
 ser verificada a aprovação do aluno.   
 *******************************************************************************/
+#include <iostream>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+int soma_notas(int notas[], int num_atividades){
+    int resultado = 0;
+    int controle = 0;
+    while(controle < num_atividades){
+    resultado = resultado + notas[controle];
+    controle = controle + 1;
+}   
+    return resultado;
+}
+int main()
+{
+    int res_aluno[5] = {20,11,5,16,13};
+    int aprovacao = >59;
+    int reprovacao = <40;
+    int exa_especial = >40<60;
+    if (soma_notas(res_aluno,5) > )
+    cout << "Aluno aprovado";
+    else if (soma_notas(res_aluno,3) < soma_pontos(res_cru,3))
+    cout << "Aluno reprovado";
+    else
+    cout << "Aluno fara o exame especial";
+}
+ 
+
 
 /******************************************************************************
 Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Considerando que ele trabalhada 
@@ -317,7 +358,6 @@ int main()
     }
     cout << max;
 }
-
 
 /******************************************************************************
 Exercício 17 - Faça um programa em C++ que executa a mesma operação do primeiro, porém informa a 
