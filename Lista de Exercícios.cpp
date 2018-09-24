@@ -221,7 +221,7 @@ int main()
     cout << "Aluno foi aprovado";
     else if (nota_aluno < 40)
     cout << "Aluno foi reprovado";
-    else (nota_aluno > 40 < 60);
+    else
     cout << "Aluno fara o exame especial";
 }  
 
