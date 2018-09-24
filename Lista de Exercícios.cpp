@@ -232,7 +232,6 @@ ser verificada a aprovação do aluno.
 *******************************************************************************/
 #include <iostream>
 using namespace std;
-
 #include <iostream>
 using namespace std;
 int soma_notas(int notas[], int num_atividades){
@@ -247,18 +246,15 @@ int soma_notas(int notas[], int num_atividades){
 int main()
 {
     int res_aluno[5] = {20,11,5,16,13};
-    int aprovacao = >59;
-    int reprovacao = <40;
-    int exa_especial = >40<60;
-    if (soma_notas(res_aluno,5) > )
+    int aprovacao = 60;
+    int reprovacao = 40;
+    if (soma_notas(res_aluno,5) > aprovacao)
     cout << "Aluno aprovado";
-    else if (soma_notas(res_aluno,3) < soma_pontos(res_cru,3))
+    else if (soma_notas(res_aluno,5) < reprovacao)
     cout << "Aluno reprovado";
     else
     cout << "Aluno fara o exame especial";
 }
- 
-
 
 /******************************************************************************
 Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Considerando que ele trabalhada 
