@@ -34,7 +34,6 @@ Caso seja, imprima um texto com essa informacao para o funcionario do RH.
 ************************************************************************************/
 
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -97,39 +96,39 @@ int main()
       cout << "Valor liquido do salario: " << (desconto_salario3) << endl;
   }
 }
-     double cargo1;
+   int cargo1;
    if (salario < 1500){
        cout << "O cargo do funcionario e de Estagiario. " << endl;
    }
-     double cargo2;
+   int cargo2;
    if (1501 < salario < 2000){
        cout << "O cargo do funcionario e de Dev Junior. " << endl;
    }
-   double cargo3;
+   int cargo3;
    if (2001 < salario < 4000){
        cout << "O cargo do funcionario e de Dev Pleno. " << endl;
    }
-   double cargo4;
+   int cargo4;
    if (4001 < salario < 7000){
        cout << "O cargo do funcionario e de Dev Senior. " << endl;
    }
-   double cargo5;
+   int cargo5;
    if (7001 < salario < 10000){
        cout << "O cargo do funcionario e de Gerente de Projetos. " << endl;
    }
-   double cargo6;
+   int cargo6;
    if (10001 < salario < 15000){
        cout << "O cargo do funcionario e de Gerente de Projetos Senior. " << endl;
    }
-   double cargo7;
+   int cargo7;
    if (15001 < salario < 30000){
        cout << "O cargo do funcionario e de Diretor de TI. " << endl;
    }
-   double cargo8;
+   int cargo8;
    if (30001 < salario < 50000){
        cout << "O cargo do funcionario e de Diretor de TI Senior. " << endl;
    }
-   double cargo9;
+   int cargo9;
    if (50001 < salario < 100000){
        cout << "O cargo do funcionario e de Presidente. " << endl;
    }
