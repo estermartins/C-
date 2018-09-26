@@ -72,7 +72,6 @@ int main()
     
     if(nacionalidade =="brasileiro" ) {
       cout <<"O funcionario: " << nome << " e brasileiro!" << endl;
-      system("pause");
  }
     double desconto_salario1 =  (salario-(salario * 0.08));
   if(salario <= 1693.72){
