@@ -40,7 +40,7 @@ using namespace std;
 int main()
 {
     string nome;
-    string CPF; // uso do string ao inves de int, pois este nao rodou o codigo inteiro digitando mais de 10 numeros referente ao CPF // 
+    string CPF;  
     string nacionalidade;
     string identidade;
     string pais;
@@ -70,4 +70,68 @@ int main()
     cout << "Quanto é o seu salario?" << "\n";
     cin >> salario;
     
+    if(nacionalidade =="brasileiro" ) {
+      cout <<"O funcionario: " << nome << " e brasileiro!" << endl;
+      system("pause");
+ }
+    double desconto_salario1 =  (salario-(salario * 0.08));
+  if(salario <= 1693.72){
+      cout << nome << endl;
+      cout << CPF << endl;
+      cout << nacionalidade << endl;
+      cout << identidade << endl;
+      cout << pais << endl;
+      cout << estado << endl;
+      cout << cidade << endl;
+      cout << rua << endl;
+      cout << numero << endl;
+      cout << salario << endl;
+}
+     double desconto_salario2 =  (salario-(salario * 0.09));
+  if(salario > 1693.72 && salario <= 2822.90){
+      cout << "O valor descontado do salario para o INSS: foi de 9 porcento. "<< endl;
+      cout << "Valor liquido do salario: " << (desconto_salario2) << endl;
+  }
+     double desconto_salario3 =  (salario-(salario * 0.11));
+   if(salario > 2822.91){
+      cout << "O valor descontado desse salario para o INSS: foi de 11 porcento. "<< endl;
+      cout << "Valor liquido do salario: " << (desconto_salario3) << endl;
+  }
+}
+     double cargo1;
+   if (salario < 1500){
+       cout << "O cargo do funcionario e de Estagiario. " << endl;
+   }
+     double cargo2;
+   if (1501 < salario < 2000){
+       cout << "O cargo do funcionario e de Dev Junior. " << endl;
+   }
+   double cargo3;
+   if (2001 < salario < 4000){
+       cout << "O cargo do funcionario e de Dev Pleno. " << endl;
+   }
+   double cargo4;
+   if (4001 < salario < 7000){
+       cout << "O cargo do funcionario e de Dev Senior. " << endl;
+   }
+   double cargo5;
+   if (7001 < salario < 10000){
+       cout << "O cargo do funcionario e de Gerente de Projetos. " << endl;
+   }
+   double cargo6;
+   if (10001 < salario < 15000){
+       cout << "O cargo do funcionario e de Gerente de Projetos Senior. " << endl;
+   }
+   double cargo7;
+   if (15001 < salario < 30000){
+       cout << "O cargo do funcionario e de Diretor de TI. " << endl;
+   }
+   double cargo8;
+   if (30001 < salario < 50000){
+       cout << "O cargo do funcionario e de Diretor de TI Senior. " << endl;
+   }
+   double cargo9;
+   if (50001 < salario < 100000){
+       cout << "O cargo do funcionario e de Presidente. " << endl;
+   }
 }
