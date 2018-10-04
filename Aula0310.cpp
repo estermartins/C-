@@ -11,7 +11,6 @@ int max(int vetor[], int tam){
     }
     return maior;
 }
-
 int main(){
     int vetor[6]={1,2,3,4,5,6};
     cout << max(vetor,6);
