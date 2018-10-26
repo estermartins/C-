@@ -1,47 +1,52 @@
 #include <iostream>
 using namespace std;
 
-class Caneta{
+class CanetaNova{
     private:
         string cor;
+        string marca;
         int volume;
+        
   
     public:
-        Caneta( string corCaneta, int volumeCaneta );
-        void imprimeDadosCaneta();
-        void setCorCaneta(string cor);
+        CanetaNova( string corCanetaNova, string marcaCanetaNova, int volumeCanetaNova );
+        void imprimeDadosCanetaNova();
+        void setMarcaCanetaNova(string marca);
+        void setCorCanetaNova(string cor);
 };
 
-Caneta::Caneta( string c, int v ){ 
+CanetaNova::CanetaNova( string c, string m, int v ){  // Construtor d classe
     cor = c;
+    marca = m;
     volume = v;
 }
 
-void Caneta::imprimeDadosCaneta(){
-    cout << "Cor da Caneta: " << cor << endl;
-    cout << "Volume da Caneta: " << volume << endl;
+void CanetaNova::imprimeDadosCanetaNova(){
+    cout << "Cor da CanetaNova: " << cor << endl;
+    cout << "Marca da CanetaNova: " << marca << endl;
+    cout << "Volume da CanetaNova: " << volume << endl;
 }
 
-void Caneta::setCorCaneta(string cor){
+void CanetaNova::setCorCanetaNova(string cor){
     this->cor = cor;
 }
 
 int main(){
-    Caneta caneta1("Verde", 10);
-    Caneta caneta2("Azul", 10);
-    Caneta caneta3("Vermelha", 8);
+    CanetaNova caneta1("Verde", "Bic", 10);
+    CanetaNova caneta2("Azul", "FaberCastell", 10);
+    CanetaNova caneta3("Vermelha", "Batata", 8);
     // Crie uma nova caneta e imprima ela.
     // Adicione na classe um atributo marca, e modifique o método de
     // impressão para que ele também imprima a marca.
-    caneta1.imprimeDadosCaneta();
+    caneta1.imprimeDadosCanetaNova();
     cout << endl;
-    caneta2.imprimeDadosCaneta();
+    caneta2.imprimeDadosCanetaNova();
     cout << endl;
-    caneta3.imprimeDadosCaneta();
+    caneta3.imprimeDadosCanetaNova();
     
-    caneta3.setCorCaneta("Amarela");
+    caneta3.setCorCanetaNova("Roxa");
     cout << endl;
     cout << "Novo Valor:" << endl;
-    caneta3.imprimeDadosCaneta();
+    caneta3.imprimeDadosCanetaNova();
     
 }
