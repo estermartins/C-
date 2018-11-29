@@ -1,3 +1,7 @@
+****************************************
+ORDENAÇÃO DE LETRAS = função "char"
+****************************************
+
 #include <iostream> 
 using namespace std;
 
